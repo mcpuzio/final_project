@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  street: MyString
+  date_reported: 2016-02-22
+  size: false
+  description: MyText
+  latitude: 9.99
+  longitude: 9.99
+
+two:
+  street: MyString
+  date_reported: 2016-02-22
+  size: false
+  description: MyText
+  latitude: 9.99
+  longitude: 9.99
