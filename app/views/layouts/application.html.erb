@@ -4,10 +4,24 @@
   <title>FinalProject</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<nav>
+	<div id="cityLogo"></div>
+	<div class="dropdown">
+ 	 <button onclick="myFunction()" class="dropbtn">Issues</button>
+  		<div id="myDropdown" class="dropdown-content">
+		    <a href="#">Potholes</a>
+		    <a href="#">Permits</a>
+		    <a href="#">Tickets</a>
+	  	</div>
+	 <button onclick="myFunction()" class="dropbtn">Forum</button>
+	 <button onclick="myFunction()" class="dropbtn">Calender</button> 	
+	</div>
+</nav>
 
 <%= yield %>
 

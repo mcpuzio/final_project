@@ -1,3 +1,38 @@
 // Place all the styles related to the potholes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#addPinButton {
+	width: 130px;
+	height: 65px;
+	background-color: #ff8000;
+	color: #ffb366;
+	border: 4px outset #ffb366;
+	border-radius: 27px;
+	position: relative;
+	margin-left: 47%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	font-size: 26px;
+	line-height: -18px;
+	text-align: center;
+}
+
+#mapWrapper {
+	background-color: #ffb366;
+	height: 12%;
+	padding: 0 8% 8% 8%;
+	border-radius: 2%;
+	border: 2px solid black;
+
+	h3 {
+		margin-top: 1%;
+	}
+
+	#googleMap {
+	margin: 0 auto;
+	float: center;
+	line-height: 18px;
+	border: 5px solid black;
+	} 
+}
+
