@@ -4,23 +4,44 @@
   <title>FinalProject</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <nav>
-	<div id="cityLogo"></div>
-	<div class="dropdown">
- 	 <button onclick="myFunction()" class="dropbtn">Issues</button>
-  		<div id="myDropdown" class="dropdown-content">
-		    <a href="#">Potholes</a>
-		    <a href="#">Permits</a>
-		    <a href="#">Tickets</a>
-	  	</div>
-	 <button onclick="myFunction()" class="dropbtn">Forum</button>
-	 <button onclick="myFunction()" class="dropbtn">Calender</button> 	
+	<!-- <div class="container-fluid">
+		<div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <a href="#menu">
+  			&#9776;
+		</a>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+	<div id="cityLogo"></div> -->
+	<div class="buttons-bar">
+		<div class="dropdown">
+	 	 <button class="dropbtn">Issues</button>
+	  		<div class="dropdown-content">
+			    <a href="/potholes">Potholes</a>
+			    <a href="/permits">Permits</a>
+			    <a href="/cityforms">Tickets</a>
+		  	</div>
+		  </div>
+		 <button class="dropbtn">Forum</button>
+		 <a href="/calender"><button class="dropbtn">Calender</button></a>
+		 <ul style="float:right;list-style-type:none;">
+		 	<li><img src="assets/linden-seal-2.png" id="cityLogo"></li>
+		 </ul>
 	</div>
+		 <!-- <div class="dropbtn"><h1 id="header-title">Linden311</div>
+				<div id="logo-container">
+				</div>  -->
+	<!-- </div>
+	</div> -->
 </nav>
 
 <%= yield %>

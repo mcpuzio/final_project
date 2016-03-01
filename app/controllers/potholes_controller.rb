@@ -9,8 +9,6 @@ class PotholesController < ApplicationController
 
   def create
   	@pothole = Pothole.new(pothole_params)
-      @latitude = @pothole[:latitude]
-      @longitude = @pothole[:longitude]
   	if @pothole.save
   		redirect_to potholes_path
   	else

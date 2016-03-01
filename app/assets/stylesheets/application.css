@@ -21,13 +21,30 @@ nav {
 	display: block;
 	background-color: #ff8000;
 	height: 60px;
+    line-height: 60px;
 }
 
-#cityLogo {
-    width: 5%;
-    height: auto;
+#header-title {
+    background-color: #ffb366;
+    color: #000000;
+    font-family: 'Lora', serif;
+    font-size: 1.4em;
+    position: absolute;
+    margin-left: 35%;
+    margin-bottom: 1%;
+}
 
-    background-image: url(linden-seal-2.png);
+#myDropdown {
+    display: none;
+}
+
+
+
+#logo-container {
+    width: 0.2%;
+    height: auto;
+    float: right;
+    background-image: url("assets/linden-seal-2.png");
 }
 
 .dropbtn {
@@ -70,5 +87,17 @@ nav {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#cityLogo {
+    display: block;
+    background-color: #ff8000;
+    
+}

@@ -1,14 +1,19 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
-
-<p>
-	<%= form_for @user do |f| %>
-		<%= f.label :name %>
-		<%= f.text_field :name %>
-		<%= f.label :address %>
-		<%= f.text_field :address %>
-		<%= f.label :password %>
-		<%= f.password_field :password %>
-		<%= f.submit %>
+<div id="video-container">
+	<video autoplay loop muted id="my-video" class="video">
+	  <source src="assets/film.mov" type="video/mp4">
+	</video>
+</div>
+<div id="signInForm">
+	<h2>Sign Up, Today!</h2>
+	<div id="signin-container"><%= form_for @user do |f| %><ul>
+		<li><%= f.label :name %>
+		<%= f.text_field :name %></li>
+		<li><%= f.label :address %>
+		<%= f.text_field :address %></li>
+		<li><%= f.label :password %>
+		<%= f.password_field :password %></li>
+		<li><%= f.submit %></li>
+		</ul>
 	<% end %>
-</p>
+	</div>
+</div>

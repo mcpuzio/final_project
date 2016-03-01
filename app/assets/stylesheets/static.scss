@@ -1,6 +1,112 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#payticket1 {
+	background-color: #ffb366;
+	color: #ffffff;
+	font-family: 'Lora', serif;
+	font-size: 1.4em;
+	margin: 0 0%;
+	display: block;
+}
+
+#payticket2 {
+	background-color: #ffb366;
+	color: #ffffff;
+	font-family: 'Lora', serif;
+	font-size: 1.4em;
+	margin: 0 12%;
+	display: block;
+
+	em {
+		color: #000000;
+	}
+}
+
 iframe {
 	display: block;
+	margin-left: 12%;
+}
+.buttons_static {
+	width: 13%;
+	height: 65px;
+	background-color: #ff8000;
+	border: 4px outset #ffb366;
+	border-radius: 27px;
+	position: relative;
+	margin-left: 47%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	font-size: 23px;
+	text-align: center;
+	display: inline-block;
+	padding: 5px 5px;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 9px #999;
+
+	a {
+		color: #ffb366;
+	}
+}
+
+.buttons_static a:link {
+	font: #ffffff;
+	text-decoration: none;
+}
+
+.buttons_static a:hover {
+	color: #ffffff;
+}
+
+.buttons_static:active {
+	background-color:  #ffffff;
+	box-shadow: 0 5px #666;
+  	transform: translateY(4px);
+}
+
+#permits-container {
+	display: center;
+	margin-left: 10%;
+}
+
+.permits {
+	width: 207px;
+	height: 170px;
+	background-color: #ff8000;
+	border: 2px outset #ffb366;
+	border-radius: 7px;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 9px #999;
+	margin: 2%;
+	padding: 3%;
+	display: inline-block;
+	text-align: center;
+
+	img {
+		width: 70px;
+		height: auto;
+		padding: 0.1em
+	}
+}
+
+.permits a {
+		color: #ffb366;
+		text-align: center
+	}
+
+.permits a:link {
+		text-decoration: none;
+		font-color: #ffb366;
+		font-family: 'Lora', serif;
+		font-size: 2.4em;
+}
+
+.permits a:hover {
+	color: #ffffff;
+}
+
+#addCalendar {
+	margin-left: 12%;
 }

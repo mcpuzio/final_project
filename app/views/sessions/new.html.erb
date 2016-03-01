@@ -1,14 +1,22 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
-
-<p>
-	<%= form_tag login_path do %>
-		<%=label_tag :name %>
-		<%=text_field_tag :name %>
+<div id="video-container">
+	<video autoplay loop muted id="my-video" class="video">
+	  <source src="assets/film.mov" type="video/mp4">
+	</video>
+</div>
+<div id="signInForm">
+	<div id="signin-container"><%= form_tag '/login', method: "POST" do %><ul>
+		<li><%=label_tag :name %>
+		<%=text_field_tag :name %></li>
+		<li>
 		<%=label_tag :address %>
-		<%=text_field_tag :address %>
+		<%=text_field_tag :address %></li>
+		<li>
 		<%=label_tag :password %>
-		<%=password_field_tag :password %>
-		<%=submit_tag "Sign in" %>
+		<%=password_field_tag :password %></li>
+		</ul>
+	</div>
+</div>
+	<div><%=submit_tag "Sign in", class: "btn-login" %></div>
 	<% end %>
-</p>
+
+
