@@ -1,12 +1,15 @@
-<h1>REPORT A POTHOLE</h1>
-<button id="addPinButton"  onclick="deleteMarkers();">Post Pin</button>
-<div style="width: 580px ;height:480px;" id="mapWrapper">
-	<h3>Pin A Pothole</h3>
-	<div id="googleMap" style="width:100%;height:98%;"></div>
-		
-</div>
 <div>
+		<h1>Linden 311</h1>
+	
+	<button id="addPinButton"  onclick="deleteMarkers()" value="deleteMarkers">Remove Pin</button>
+
+	<div style="width: 78%; height: 480px;" id="mapWrapper">
+		<h3>Pin A Pothole</h3>
+		<div id="googleMap" style="width: 100%;height: 98%;"></div>
+	</div>
+
 </div>
+
 <script src="https://maps.googleapis.com/maps/api/js"
   type="text/javascript"></script>
 <script>
@@ -26,12 +29,18 @@
 
 		  google.maps.event.addListener(map, 'click', function(event) {
 
-		     placeMarker(event.latLng);
-		    	clearMarkers();
-        	markers = [];
+		// if (pmarker != null) {
+		// 	marker.remove();
+		// }
+
+		    placeMarker(event.latLng);
+		    	
+
 				
 		  });
 	}
+
+	var pmarker = [];
 
 	function placeMarker(location) {
 
@@ -43,6 +52,13 @@
 	    draggable: true,
     	animation: google.maps.Animation.DROP,
 	  });
+	  // for(var i = 0; i < pmarker.length; i++){
+		 //  if (pmarker.length > 0){
+		 //  	pmarker[0].remove();
+		 //  }
+	  // }
+	  deleteMarkers();
+	  pmarker.push(marker);
 
 	  // attempted to add an event to limit the user to one marker
 	  // at a time
@@ -81,9 +97,10 @@
 	  infowindow.open(map,marker);
 	}
 
-	function clearMarkers() {
-	  clearMarkers();
-        markers = [];
+	function deleteMarkers() {
+	  for (var i = 0; i < pmarker.length; i++) {
+	  	pmarker[i].setMap(null);
+	  }
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);

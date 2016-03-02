@@ -39,6 +39,7 @@ video {
 	width: 450px;
 	height: 280px;
 	position: fixed;
+	z-index: -5;
 
 	#signin-container {
 
@@ -62,24 +63,29 @@ video {
 .btn-login {
 				width: 100px;
 				height: 35px;
-				background-color: #ff8000;
-				color: #ffb366;
-				border: 4px outset #ffb366;
-				border-radius: 27px;
-				position: absolute;
+				background-color: #000000;
+				color: #ff8000;
+				border: 4px #ffb366;
+				border-radius: 7px;
+				position: fixed;
 				margin-left: 36%;
-				margin-top: 29%;
+				margin-top: 28%;
 				margin-bottom: 3%;
-				font-size: 13px;
+				font-size: 17px;
 				text-align: center;
-				display: inline-block;
+				display: block;
 				padding: 5px 5px;
 				cursor: pointer;
 				outline: none;
 				box-shadow: 0 9px #999;
-				top: 4.7em;
 				z-index: 30;
 			}
+
+			.btn-login a:hover {
+					color: #ffb366;
+					shadow: 0 9px #999;
+				}
+
 .btn-login:active {
 				background-color:  #e67300;
 				box-shadow: 0 5px #666;

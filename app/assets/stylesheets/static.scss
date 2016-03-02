@@ -1,6 +1,14 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#lindenBack {
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+}
+
 #payticket1 {
 	background-color: #ffb366;
 	color: #ffffff;
@@ -8,6 +16,7 @@
 	font-size: 1.4em;
 	margin: 0 0%;
 	display: block;
+	padding: 3px;
 }
 
 #payticket2 {
@@ -17,7 +26,7 @@
 	font-size: 1.4em;
 	margin: 0 12%;
 	display: block;
-
+	padding: 3px;
 	em {
 		color: #000000;
 	}
@@ -27,23 +36,35 @@ iframe {
 	display: block;
 	margin-left: 12%;
 }
+
+#signInForm {
+	opacity: 0.7;
+	background-color: #ffffff;
+	margin: 14% 10%;
+	width: 40%;
+	height: 47%;
+	position: absolute;
+	z-index: -3;
+}
+
 .buttons_static {
 	width: 13%;
 	height: 65px;
 	background-color: #ff8000;
-	border: 4px outset #ffb366;
-	border-radius: 27px;
+	border: 4px #ffb366;
+	border-radius: 7px;
 	position: relative;
-	margin-left: 47%;
-	margin-top: 3%;
+	margin-left: 23%;
+	margin-top: 26%;
 	margin-bottom: 3%;
 	font-size: 23px;
 	text-align: center;
-	display: inline-block;
+	display: block;
 	padding: 5px 5px;
 	cursor: pointer;
 	outline: none;
 	box-shadow: 0 9px #999;
+	z-index: 30;
 
 	a {
 		color: #ffb366;
@@ -53,16 +74,62 @@ iframe {
 .buttons_static a:link {
 	font: #ffffff;
 	text-decoration: none;
+	z-index: 30;
 }
 
 .buttons_static a:hover {
 	color: #ffffff;
+	z-index: 30;
 }
 
 .buttons_static:active {
 	background-color:  #ffffff;
 	box-shadow: 0 5px #666;
   	transform: translateY(4px);
+  	z-index: 30;
+}
+
+.buttons_static2 {
+	width: 13%;
+	height: 65px;
+	background-color: #ff8000;
+	border: 4px #ffb366;
+	border-radius: 7px;
+	position: relative;
+	margin-left: 23%;
+	margin-top: 17%;
+	margin-bottom: 3%;
+	font-size: 23px;
+	text-align: center;
+	display: block;
+	padding: 5px 5px;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 9px #999;
+	z-index: 30;
+	
+	a {
+		color: #ffb366;
+		margin-top: 0.2em;	}
+}
+
+.buttons_static2 a:link {
+	font: #ffffff;
+	text-decoration: none;
+	z-index: 30;
+	margin-top: 0.2em;
+}
+
+.buttons_static2 a:hover {
+	color: #ffffff;
+	z-index: 30;
+}
+
+.buttons_static2:active {
+	background-color:  #ffffff;
+	box-shadow: 0 5px #666;
+  	transform: translateY(4px);
+  	z-index: 30;
 }
 
 #permits-container {
