@@ -40,9 +40,9 @@ iframe {
 #signInForm {
 	opacity: 0.7;
 	background-color: #ffffff;
-	margin: 14% 10%;
-	width: 40%;
-	height: 47%;
+	margin: 150px;
+	width: 450px;
+	height: 280px;
 	position: absolute;
 	z-index: -3;
 }
@@ -53,7 +53,7 @@ iframe {
 	background-color: #ff8000;
 	border: 4px #ffb366;
 	border-radius: 7px;
-	position: relative;
+	position: fixed;
 	margin-left: 23%;
 	margin-top: 26%;
 	margin-bottom: 3%;
@@ -65,6 +65,7 @@ iframe {
 	outline: none;
 	box-shadow: 0 9px #999;
 	z-index: 30;
+	position: absolute;
 
 	a {
 		color: #ffb366;
@@ -95,7 +96,7 @@ iframe {
 	background-color: #ff8000;
 	border: 4px #ffb366;
 	border-radius: 7px;
-	position: relative;
+	position: fixed;
 	margin-left: 23%;
 	margin-top: 17%;
 	margin-bottom: 3%;
@@ -107,7 +108,8 @@ iframe {
 	outline: none;
 	box-shadow: 0 9px #999;
 	z-index: 30;
-	
+	position: absolute;
+
 	a {
 		color: #ffb366;
 		margin-top: 0.2em;	}
@@ -149,7 +151,7 @@ iframe {
 	margin: 2%;
 	padding: 3%;
 	display: inline-block;
-	text-align: center;
+	align: center;
 
 	img {
 		width: 70px;

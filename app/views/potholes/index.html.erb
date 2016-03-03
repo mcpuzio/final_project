@@ -34,8 +34,6 @@
 		// }
 
 		    placeMarker(event.latLng);
-		    	
-
 				
 		  });
 	}
@@ -71,17 +69,17 @@
 
 	  var contentString = '<%= form_for(@pothole) do |f| %>' +
 		'<ul>'+
-			'<li><%= f.label :street %>'+
+			'<li class="item"><%= f.label :street %>'+
 			'<%= f.text_field :street %></li>'+
-			'<li><%= f.label :date_reported %>'+
+			'<li class="item"><%= f.label :date_reported %>'+
 			'<%= f.date_field :date_reported %></li>'+
-			'<li><%= f.label "Small" %>'+
+			'<li class="item"><%= f.label "Small" %>'+
 			'<%= f.radio_button :size, "Small" %>'+
 			'<%= f.label "Medium" %>'+
 			'<%= f.radio_button :size, "Medium" %>'+
 			'<%= f.label "Large" %>'+
 			'<%= f.radio_button :size, "Large" %></li>'+
-			'<li><%= f.label :description %>'+
+			'<li class="item"><%= f.label :description %>'+
 			'<%= f.text_field :description %></li>'+
 			'<input value="' + pinned_lat + '" type="hidden" name="pothole[latitude]" id="pothole_latitude" />' +
 			'<input value="' + pinned_lng + '" type="hidden" name="pothole[longitude]" id="pothole_longitude" />' + 

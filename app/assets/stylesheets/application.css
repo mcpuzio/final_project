@@ -25,6 +25,11 @@ nav {
     z-index: 3;
 }
 
+#item {
+    list-style-type: none;
+    
+}
+
 #header-title {
     background-color: #ffb366;
     color: #000000;

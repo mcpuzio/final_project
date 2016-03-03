@@ -13,6 +13,12 @@ h1 {
     padding: 0.2em;
 }
 
+.item {
+	list-style-type: none;
+	text-decoration: none;
+
+}
+
 #addPinButton {
 	width: 13em;
 	height: 4em;
@@ -57,6 +63,7 @@ h1 {
 		margin-bottom: 3%; 
 		font-family: 'Lora', serif;
 		text-align: center;
+		font-size: 1.9em;
 	}
 
 	#googleMap {
